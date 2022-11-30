@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Routes from './src/routes';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="light" backgroundColor='#000' />
-    </View>
+    <>
+      <StatusBar style="light" backgroundColor='#000' translucent={true}/>
+      <Routes />
+    </>
   );
 }
 
